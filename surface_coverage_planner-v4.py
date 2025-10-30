@@ -412,7 +412,6 @@ class SurfacePlannerUI(QWidget):
         through=False,           # only front-facing cell
         show_message=True,
         style="surface",         # ensures surface-style picking
-        left_clicking=True,      # <--- enables single-click picking
 )
         plotter.show()
 
