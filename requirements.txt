@@ -1,0 +1,17 @@
+# Core dependencies for Surface Coverage Path Planner
+pyvista>=0.38.0
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+PyQt5>=5.15.0
+
+# Optional: ROS dependencies (install via ROS or pip)
+# Note: These require a ROS environment to be properly configured
+# Uncomment if you want to try pip installation (may not work without ROS)
+# rospy
+# geometry-msgs
+# std-msgs
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=22.0.0
