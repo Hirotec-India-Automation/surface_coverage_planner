@@ -21,6 +21,7 @@ selected_region = []
 path_points = []
 MODEL_PATH = None
 OUTPUT_CSV = "coverage_path.csv"
+ui = None
 
 
 # -------------------------------
@@ -178,11 +179,11 @@ class SurfacePlannerUI(QWidget):
         plotter.add_mesh(mesh, color="lightgray")
         plotter.add_text("Click a region to generate coverage path", font_size=10)
         plotter.enable_cell_picking(
-            callback=pick_callback,
-            through=True,
-            show_message=True,
-            style="wireframe",
-        )
+        callback=pick_callback,
+        through=False,           # only front-facing cell
+        show_message=True,
+        style="surface",         # ensures surface-style picking
+)
         plotter.show()
 
 
